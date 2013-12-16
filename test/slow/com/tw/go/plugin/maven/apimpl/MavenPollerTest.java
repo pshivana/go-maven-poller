@@ -12,7 +12,7 @@ public class MavenPollerTest {
                 (HttpRepoURL) RepoUrl.create("http://localhost:2201/nexus/content/repositories/releases/",
                         "deployment", "deployment123"),"com.thoughtworks.studios.go","book_management","war",null, null,null);
         PackageRevision packageRevision = new MavenPoller().poll(params);
-        System.out.println(packageRevision.getRevision());
+        System.out.println("Package Revision:"+ packageRevision.getRevision());
     }
 }
 //todo: test for unauthorized 401 response
